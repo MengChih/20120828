@@ -18,10 +18,7 @@
 */
 
 /* qTranslate Hooks */
-function qtrans_menuitem( $menu_item ) {
-   $menu_item->title = qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage( $menu_item->title );
-   return $menu_item;
-}
+
 function qtrans_header(){
 	global $q_config;
 	echo "\n<meta http-equiv=\"Content-Language\" content=\"".str_replace('_','-',$q_config['locale'][$q_config['language']])."\" />\n";
@@ -245,7 +242,6 @@ function wpsupercache_supercache_dir($uri) {
 add_filter('supercache_dir',					'wpsupercache_supercache_dir',0);
 
 // Hooks (Actions)
-add_filter('wp_setup_nav_menu_item',      'qtrans_menuitem', 0);
 add_action('wp_head',						'qtrans_header');
 add_action('category_edit_form',			'qtrans_modifyTermFormFor');
 add_action('post_tag_edit_form',			'qtrans_modifyTermFormFor');
@@ -338,6 +334,9 @@ add_filter('plugin_action_links', 			'qtrans_links', 10, 2);
 add_filter('manage_language_columns',		'qtrans_language_columns');
 add_filter('core_version_check_locale',		'qtrans_versionLocale');
 add_filter('redirect_canonical',			'qtrans_checkCanonical', 10, 2);
+
+add_filter(‘home_url’, ‘qtrans_convertURL’);
+
 // skip this filters if on backend
 if(!defined('WP_ADMIN')) {
 	add_filter('the_posts',					'qtrans_postsFilter');
