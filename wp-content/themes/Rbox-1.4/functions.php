@@ -784,3 +784,9 @@ function the_category_unlinked($separator = ' ') {
     
     echo $thelist;
 }
+//home option show up in menu panel
+function home_page_menu_args( $args ) {
+$args['show_home'] = true;
+return $args;
+}
+add_filter( 'wp_page_menu_args', 'home_page_menu_args' );

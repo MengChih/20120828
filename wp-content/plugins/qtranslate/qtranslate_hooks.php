@@ -335,8 +335,6 @@ add_filter('manage_language_columns',		'qtrans_language_columns');
 add_filter('core_version_check_locale',		'qtrans_versionLocale');
 add_filter('redirect_canonical',			'qtrans_checkCanonical', 10, 2);
 
-add_filter(‘home_url’, ‘qtrans_convertURL’);
-
 // skip this filters if on backend
 if(!defined('WP_ADMIN')) {
 	add_filter('the_posts',					'qtrans_postsFilter');

@@ -239,7 +239,11 @@ DD_belatedPNG.fix('.navbar, #logo img, #searchsubmit, #img-left img, #img-right 
 		
 
 <?php } else echo($navcheck); ?> 
-<div id = "top-language"><a href="<?php echo home_url(); ?>">English</a>　|　<a href="#">中文</a></div>
+		<div id = "top-language"><?php echo qtrans_generateLanguageSelectCode('text'); ?></div>
+			
+		
+
+
 		</div>	
 	
 
@@ -265,15 +269,15 @@ DD_belatedPNG.fix('.navbar, #logo img, #searchsubmit, #img-left img, #img-right 
 		<!--logo-->
 
 <?php if ( ( get_option('tm_logo_01') ) != '' ) { ?>
-		<div id="logo2"><a href="<?php echo home_url(); ?>" title="<?php bloginfo('description'); ?>"><img src="<?php echo get_option('tm_logo_01'); ?>" alt="<?php echo get_option('tm_logo_02'); ?>" /></a></div><!--logo end-->
+		<div id="logo2"><a href="<?php qtrans_convertURL( bloginfo('url') ); ?>" title="<?php bloginfo('description'); ?>"><img src="<?php echo get_option('tm_logo_01'); ?>" alt="<?php echo get_option('tm_logo_02'); ?>" /></a></div><!--logo end-->
 	<?php } else { ?>
 			
 	<?php } ?>	
 			
 			<!--menu-->
 	<div id=header_full_name>
-		TAIPEI CULTURAL CENTER<br>
-		TAIPEI ECONOMIC AND CULTURAL OFFICE IN NEW YORK
+        <!--:en-->TAIPEI CULTURAL CENTER<br>TAIPEI ECONOMIC AND CULTURAL OFFICE IN NEW YORK<!--:-->
+	
 	</div>
 
 	<div class='tagline'>
