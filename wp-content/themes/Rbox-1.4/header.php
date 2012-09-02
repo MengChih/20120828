@@ -214,7 +214,7 @@ DD_belatedPNG.fix('.navbar, #logo img, #searchsubmit, #img-left img, #img-right 
 	<?php  if ($navcheck == '') { ?>
 	
 	<ul class="dropdown dropdown-horizontal reset">
-		<li class="current"><a href="<?php echo home_url(); ?>" title="Home">Home</a></li>
+		<li class="current"><a href="<?php qtrans_convertURL( bloginfo('url') ); ?>" title="Home">Home</a></li>
 					
 		<?php
 				if (get_option('tm_menu_bar') <> ''){

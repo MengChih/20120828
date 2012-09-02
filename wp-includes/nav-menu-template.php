@@ -489,3 +489,27 @@ function _nav_menu_item_id_use_once( $id, $item ) {
 	return $id;
 }
 add_filter( 'nav_menu_item_id', '_nav_menu_item_id_use_once', 10, 2 );
+/**
+ * menu links (created using the Nav Menu feature) to the current language.
+ */
+add_filter('walker_nav_menu_start_el', 'qtrans_in_nav_el', 10, 4);
+function qtrans_in_nav_el($item_output, $item, $depth, $args){
+    $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+    $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+    $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+    
+   // Determine integration with qTranslate Plugin
+   if (function_exists('qtrans_convertURL')) {
+      $attributes .= ! empty( $item->url ) ? ' href="' . qtrans_convertURL(esc_attr( $item->url )) .'"' : '';
+   } else {
+      $attributes .= ! empty( $item->url ) ? ' href="' . esc_attr( $item->url ) .'"' : '';
+   }
+   
+   $item_output = $args->before;
+   $item_output .= '<a'. $attributes .'>';
+   $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+   $item_output .= '</a>';
+   $item_output .= $args->after;
+      
+   return $item_output;
+}
