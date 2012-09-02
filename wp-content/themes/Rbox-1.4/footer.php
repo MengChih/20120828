@@ -11,7 +11,7 @@
 
 <a href="<?php echo home_url(); ?>" title="<?php bloginfo('description'); ?>"><img src="http://tpecc-ny.org/wp-content/themes/images/footer_logo.jpg"  alt="footer_logo" width="452" height="55" /></a></div>
 				
-			<div id = "language"><a href="<?php echo home_url(); ?>">English</a>　|　<a href="#">中文</a></div>
+			<div id = "language"><?php echo qtrans_generateLanguageSelectCode('text'); ?></div>
 		</div>	
 			<div class="clear"></div>
 

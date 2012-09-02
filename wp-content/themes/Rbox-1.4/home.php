@@ -116,7 +116,8 @@ include ($slideshow); ?>
 					<?php global $more;
 				        // set $more to 0 in order to only get the first part of the post
 					$more = 0;
-					the_excerpt(); ?>
+					echo substr(get_the_excerpt(), 0,400);
+					//the_excerpt(); ?>
 					
 					
 					</div> <!--box-content close-->

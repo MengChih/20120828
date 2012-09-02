@@ -45,7 +45,10 @@
 
 <div class="post-entry <?php if ($thumb_small <> '') {echo "timbg";} ?>">
 			
-			<?php the_excerpt( __( '', 'Rbox' ) ); ?>
+			<?php 
+				//the_excerpt( __( '', 'Rbox' ) );
+				echo substr(get_the_excerpt(), 0,400); 
+			?>
 			<!-- <?php the_content( __( '', 'Rbox' ) ); ?> -->
 			<div class="clear"></div>
 			<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'Rbox' ), 'after' => '' ) ); ?>

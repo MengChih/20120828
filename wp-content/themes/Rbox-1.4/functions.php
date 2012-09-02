@@ -183,6 +183,7 @@ add_action( 'widgets_init', 'Rbox_widgets_init' );
 
 /** Excerpt */
 function Rbox_excerpt_length( $length ) {
+	
 	return 45;
 }
 add_filter( 'excerpt_length', 'Rbox_excerpt_length' );
@@ -191,6 +192,8 @@ function Rbox_auto_excerpt_more( $more ) {
 	return ' &hellip;' ;
 }
 add_filter( 'excerpt_more', 'Rbox_auto_excerpt_more' );
+
+
 
 /** redirect */
 if ( is_admin() && isset($_GET['activated'] ) && $pagenow ==	"themes.php" )
@@ -790,4 +793,3 @@ $args['show_home'] = true;
 return $args;
 }
 add_filter( 'wp_page_menu_args', 'home_page_menu_args' );
-
