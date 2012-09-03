@@ -47,7 +47,8 @@
 			
 			<?php 
 				//the_excerpt( __( '', 'Rbox' ) );
-				echo substr(get_the_excerpt(), 0,400); 
+				echo mb_substr(get_the_excerpt(), 0,400);
+
 			?>
 			<!-- <?php the_content( __( '', 'Rbox' ) ); ?> -->
 			<div class="clear"></div>
@@ -55,12 +56,12 @@
 	
 	<!--clear float--><div class="clear"></div>
 				
-				<span class="read-more"><a href="<?php the_permalink() ?>#more-<?php the_ID(); ?>"><?php _e('Read More' , 'Rbox'); ?></a></span>
+				
 				
 				
 				</div><!--post-entry end-->
 
-
+		<span class="read-more"><a href="<?php the_permalink() ?>#more-<?php the_ID(); ?>"><?php _e('Read More' , 'Rbox'); ?></a></span>
 		<?php comments_template( '', true ); ?>
 
 </div> <!--post end-->

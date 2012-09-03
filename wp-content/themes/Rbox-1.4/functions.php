@@ -194,7 +194,6 @@ function Rbox_auto_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'Rbox_auto_excerpt_more' );
 
 
-
 /** redirect */
 if ( is_admin() && isset($_GET['activated'] ) && $pagenow ==	"themes.php" )
 	wp_redirect( 'themes.php?page=Rbox_functions.php');
@@ -793,3 +792,9 @@ $args['show_home'] = true;
 return $args;
 }
 add_filter( 'wp_page_menu_args', 'home_page_menu_args' );
+
+add_filter('body_class', 'append_language_class');
+function append_language_class($classes){
+  $classes[] = ICL_LANGUAGE_CODE;  //or however you want to name your class based on the language code
+  return $classes;
+}
