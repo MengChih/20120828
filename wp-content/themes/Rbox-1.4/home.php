@@ -71,18 +71,26 @@ include ($slideshow); ?>
 		
 		</div>
 				
-		<?php
-                $num_posts = 0;
-                $show_posts = 7;
-		$args = array(
-                  'numberposts' => $show_posts 
-                );
-                $posts = get_posts($args);
-		foreach ($posts as $post) { 
-                  $num_posts++;
-                  setup_postdata($post);
-		?>
 		
+       <?php	
+	 //$args = array('numberposts'=>7); 
+	//$custom_posts = get_posts($args);
+	//foreach($custom_posts as $post)  { 
+	//setup_postdata($post);
+	
+		  //$num_posts = 0;
+          //$show_posts = 7;
+		  //$args = array(
+                  //'numberposts' => $show_posts 
+                //);
+          //$posts = get_posts($args);
+		  foreach ($posts as $post) { 
+                  //$num_posts++;
+                  //setup_postdata($post);
+
+		?>
+        
+	
 	<?php $thumb_small='';
 	      $thumb_small= get_post_meta($post->ID, 'Thumbnail', true);?>
 		
@@ -134,6 +142,9 @@ include ($slideshow); ?>
 				
 				</div><!--boxes  end-->
 		<?php } ?>
+
+
+
 
 		<div id="index_social">
 		<table width="225" border="0" cellspacing="0" cellpadding="0">

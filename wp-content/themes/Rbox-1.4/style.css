@@ -690,6 +690,9 @@ h2{	//font-weight:bold;
 .box1,.box2,.box3,.box5,.box6,.box7{
 	margin-right: 21px;	
 }
+.box{
+	margin-right: 16px;
+}
 .box-head {
 	width:225px;
 	min-height:126px;
