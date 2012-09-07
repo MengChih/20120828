@@ -184,7 +184,7 @@ add_action( 'widgets_init', 'Rbox_widgets_init' );
 /** Excerpt */
 function Rbox_excerpt_length( $length ) {
 	
-	return 45;
+	return 200;
 }
 add_filter( 'excerpt_length', 'Rbox_excerpt_length' );
 
@@ -192,6 +192,7 @@ function Rbox_auto_excerpt_more( $more ) {
 	return ' &hellip;' ;
 }
 add_filter( 'excerpt_more', 'Rbox_auto_excerpt_more' );
+
 
 
 /** redirect */
@@ -792,9 +793,3 @@ $args['show_home'] = true;
 return $args;
 }
 add_filter( 'wp_page_menu_args', 'home_page_menu_args' );
-
-add_filter('body_class', 'append_language_class');
-function append_language_class($classes){
-  $classes[] = ICL_LANGUAGE_CODE;  //or however you want to name your class based on the language code
-  return $classes;
-}

@@ -49,7 +49,7 @@
 						<div class="clear"></div>
 			<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'Rbox' ), 'after' => '' ) ); ?>
 						
-						<?php //the_tags('Social tagging: ',' > '); ?>
+						<?php the_tags('Social tagging: ',' > '); ?>
 						
 					</div><!--post-entry end-->
 	

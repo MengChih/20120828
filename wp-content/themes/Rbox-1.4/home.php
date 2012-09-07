@@ -86,7 +86,7 @@ include ($slideshow); ?>
           //$posts = get_posts($args);
 		  foreach ($posts as $post) { 
                   //$num_posts++;
-                  //setup_postdata($post);
+                  setup_postdata($post);
 
 		?>
         
@@ -126,8 +126,8 @@ include ($slideshow); ?>
 					$more = 0;
 					
 					//echo substr(get_the_excerpt(), 0,400);
-					echo mb_substr(get_the_excerpt(), 0,400);
-					//the_excerpt(); ?>
+					//echo mb_substr(get_the_excerpt(), 0,400);
+					the_excerpt(); ?>
 					
 					
 					</div> <!--box-content close-->
@@ -204,5 +204,9 @@ include ($slideshow); ?>
 		
 
 <!--wrapper end-->
+
+
+
+
 
 <?php get_footer(); ?>
