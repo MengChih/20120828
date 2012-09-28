@@ -5,7 +5,7 @@
 
 
 
-	<?php $tm_slide_style = get_option('tm_slide_style');
+<?php $tm_slide_style = get_option('tm_slide_style');
 
 if(empty($tm_slide_style))
 {
