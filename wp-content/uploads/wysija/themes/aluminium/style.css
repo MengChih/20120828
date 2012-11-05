@@ -1,0 +1,49 @@
+/*
+Theme Name: Aluminium
+Description: Dark and grey.
+Author: Skipp
+Author URI: http://themeforest.net/user/aleskipp
+Author Email: alexis@skipp.ca
+Tags: grey, black
+
+Note: the styles below offer all the possibilities of Wysija. The plugin won't recognize any additional styles if you add them.
+
+*/
+html {
+    background-color: #000000; /* cannot be transparent and will default to white */
+}
+
+header {
+    background-color: transparent; /* can be transparent */
+}
+body {
+    color:#363737;
+    font-family: "Arial";
+    font-size: 12px;
+    background-color: #dcdcdc; /* can be transparent */
+}
+footer {
+    background-color: #000000; /* can be transparent */
+}
+h1 {
+    color: #323232;
+    font-family: Arial;
+    font-size: 28px;
+}
+h2 {
+    color: #323232;
+    font-family: Arial;
+    font-size: 18px;
+}
+h3 {
+    color: #323232;
+    font-family: Arial;
+    font-size: 13px;
+}
+a {
+    color: #59443e;
+    text-decoration:underline;
+}
+unsubscribe {
+    color:#FFFFFF;
+}

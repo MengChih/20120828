@@ -1,0 +1,1 @@
+jQuery(function(a){a(".wysija-footer pre").hide();a(".wysija-footer .expandquer").click(function(){a(this).find("pre").toggle()})});

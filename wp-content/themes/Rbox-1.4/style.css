@@ -1181,7 +1181,7 @@ span.admin_icon {
 	border: 1px solid #ccc;
 	font: normal 12px sans-serif;
 	color: #777;
-
+	margin:10px 0 0 0;
 	outline: none;
 	//-moz-outline-color:#FFF;
 }
@@ -2219,3 +2219,4 @@ img.alignnone,
 }
 .nivo-controlNav a.active {
 	background-position: -12px 0px; position: relative;
+

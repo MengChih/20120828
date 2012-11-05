@@ -793,3 +793,15 @@ $args['show_home'] = true;
 return $args;
 }
 add_filter( 'wp_page_menu_args', 'home_page_menu_args' );
+
+//custom widgets area
+if ( function_exists('register_sidebar') )
+    register_sidebar( array(
+   'name' => __( 'My Custom Widget Area - 1'),
+   'id' => 'mycustomwidgetarea',
+   'description' => __( 'An optional widget area for your site footer', 'twentyeleven' ),
+   'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+   'after_widget' => "</aside>",
+   'before_title' => '<h3 class="widget-title">',
+   'after_title' => '</h3>',
+   ) );

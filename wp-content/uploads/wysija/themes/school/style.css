@@ -1,0 +1,49 @@
+/*
+Theme Name: Pre School
+Description: The chalk board is completely layered in Photoshop. Your designer can take full adavantage and recreate your own classroom atmosphere.  
+Author: ArtCore
+Author URI: http://artcore-illustrations.de/
+Author Email: artcorehro@googlemail.com
+Tags: grey, simple
+
+Note: the styles below offer all the possibilities of Wysija. The plugin won't recognize any additional styles if you add them.
+
+*/
+html {
+    background-color: #ffffff; /* cannot be transparent and will default to white */
+}
+
+header {
+    background-color: transparent; /* can be transparent */
+}
+body {
+    color:#323232;
+    font-family: "Arial";
+    font-size: 12px;
+    background-color: #ffffff; /* can be transparent */
+}
+footer {
+    background-color: #ffffff; /* can be transparent */
+}
+h1 {
+    color: #323232;
+    font-family: "Arial";
+    font-size: 36px;
+}
+h2 {
+    color: #323232;
+    font-family: "Arial";
+    font-size: 30px;
+}
+h3 {
+    color: #323232;
+    font-family: "Arial";
+    font-size: 24px;
+}
+a {
+    color: #323232;
+    text-decoration:underline;
+}
+unsubscribe {
+    color:#7f7f7f;
+}

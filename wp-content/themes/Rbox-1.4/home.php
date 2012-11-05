@@ -5,7 +5,7 @@
 
 
 
-	<?php $tm_slide_style = get_option('tm_slide_style');
+<?php $tm_slide_style = get_option('tm_slide_style');
 
 if(empty($tm_slide_style))
 {
@@ -147,7 +147,7 @@ include ($slideshow); ?>
 
 
 		<div id="index_social">
-		<table width="225" border="0" cellspacing="0" cellpadding="0">
+<table width="225" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="42" height="35" align="left" valign="middle">
 	<img src="wp-content/themes/images/s_youtube.gif" width="37" height="30" alt="Youtube">
@@ -167,16 +167,18 @@ include ($slideshow); ?>
   <tr>
     <td width="225" height="35" colspan="2" align="left" valign="middle">
 	
-	<input name="textfield"  type="text" value="Enter your email here"" size="25" onclick="value='';focus()" onfocus="this.style.backgroundColor='#f8fff8' maxlength="50"/> 
+	<?php 
+ // Custom widget Area Start
+ if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('My Custom Widget Area - 1') ) : ?>
+<?php endif;
+// Custom widget Area End
+?>
 	</td>
 
   </tr>
-  <tr>
-    <td width="225" height="35" colspan="2" align="left" valign="middle">
-    <input name="" type="Submit" />
-	</td>
-  </tr>
+  
 </table>
+		
 		
 
 		
