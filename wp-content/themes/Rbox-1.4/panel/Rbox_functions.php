@@ -11,7 +11,7 @@ function Rbox_add_admin() {
 
 global $themename, $shortname, $options;
 
-if ( isset($_GET['page'])== basename(__FILE__) ) {
+if ( isset($_GET['page']) && $_GET['page'] == basename(__FILE__) ) {
  
 	if ( 'save' == $_REQUEST['action'] ) {
  

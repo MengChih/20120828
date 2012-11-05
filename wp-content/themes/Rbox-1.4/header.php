@@ -1,7 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 
-
 	<head profile="http://gmpg.org/xfn/11">
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 		<title>Taipei Cultural Center in New York
@@ -25,7 +24,8 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <link href="<?php bloginfo('template_directory'); ?>/favicon.ico" rel="shortcut icon"/>
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/nivo-slider.css" type="text/css" /> 
+<!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/nivo-slider.css" type="text/css" />  -->
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/nivoslider/nivo-slider.css" type="text/css" /> 
 <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/dropdown.css" type="text/css" /> -->
 <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/default.advanced.css" type="text/css" /> -->
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
@@ -44,6 +44,10 @@
 <![endif]-->
 
 <!-- / END -->
+<!-- Put the following javascript before the closing </head> tag. -->
+
+      
+      
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.nivo.slider.pack.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/tabs.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
@@ -76,8 +80,10 @@ jQuery('ul.dropdown ul').css('display', 'none');
 
 <?php $tm_slide_style = get_option('tm_slide_style'); ?>
 
-<?php if (is_front_page() ) { ?>
-
+<?php //echo $tm_slide_style ?>
+<?php //if (is_front_page() ) { ?>
+<?php if (is_home() ) { ?>
+<!-- <script>alert("<?php echo $tm_slide_style;//== 'nivofadein'  ?>");</script> -->
 <?php if ($tm_slide_style == 'slider') { ?>
 
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.cycle.all.js"></script>
@@ -114,6 +120,7 @@ jQuery(document).ready(function() {
 </script>
 
 <?php } else if ($tm_slide_style == 'nivofadein') { ?>
+
 
 <script type="text/javascript">
 jQuery(document).ready(function() {
@@ -182,8 +189,8 @@ opacity: 1.0
 </script> -->
 
 <!--[if IE 6]>
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/ie6.css" />
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/DD_belatedPNG_0.0.8a.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php //bloginfo('template_directory'); ?>/css/ie6.css" />
+	<script type="text/javascript" src="<?php //bloginfo('template_directory'); ?>/js/DD_belatedPNG_0.0.8a.js"></script>
 <script type="text/javascript">
 
 DD_belatedPNG.fix('.navbar, #logo img, #searchsubmit, #img-left img, #img-right img, .widget-container ul li, .timbg, .nivo-controlNav a');
@@ -253,7 +260,14 @@ DD_belatedPNG.fix('.navbar, #logo img, #searchsubmit, #img-left img, #img-right 
 
 <!--headercontainer-->
 	<div id="header_container">
-	
+    
+    <!--multilangual search-->
+    
+    <!--end multilangual search-->
+   
+    
+    
+	<div id="search-header"><?php get_search_form(); ?></div><!--search header end-->
 		<!--header-->
 		<div id="header">
 

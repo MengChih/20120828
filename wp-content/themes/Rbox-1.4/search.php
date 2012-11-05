@@ -13,11 +13,19 @@
 
 	<!--inside container-->
 	<div id="content_container">
-		
+		<div id="home-container">
 		<div id="content">
 		
-			<!-- left-col-->
-			<div id="left-col">
+			<?php get_sidebar(); ?>
+            
+			<div id="right-col">
+            
+         <?php   // search only posts
+
+				global $wp_query;
+				$args = array_merge( $wp_query->query, array( 'post_type' => 'post' ) );
+				query_posts( $args );?>
+
 
 			<?php if ( have_posts() ) : ?>
 				
@@ -29,18 +37,18 @@
 						<h1><?php _e( 'Nothing Found', 'Rbox' ); ?></h1>
 					
 					</div><!--head end-->
-					
-					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'Rbox' ); ?></p>
+					<p><?php _e( '<!--:en-->Sorry, but nothing matched your search criteria. Please try again with some different keywords.<!--:--><!--:zh-->查無相關資料 !建議您試試看不同的關鍵字再查詢一次。<!--:-->
+					', 'Rbox' ); ?></p>
 					
 <?php endif; ?>
 
 </div> <!--left-col end-->
 
-<?php get_sidebar(); ?>
 
-	</div> 
-</div> <!--content end-->
-	
+
+			</div> 
+		</div> <!--content end-->
+	</div><!--home-container end-->
 </div>
 <!--wrapper end-->
 

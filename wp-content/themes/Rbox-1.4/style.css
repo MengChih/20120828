@@ -69,7 +69,7 @@ a {
 	color: #656565;
 	text-decoration: none;
 	border: 0;
-	//color: #1a64af;
+	/*color: #1a64af;*/
 	outline: 0;
 }
 	
@@ -229,7 +229,7 @@ b,
 dt,
 th {
 	color: #4D4D4D;
-	//color: #000;
+	/*color: #000;*/
 }
 tbody {
 	display: table-row-group;
@@ -258,21 +258,7 @@ td, th {
 /* header*/
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#search-header{
-	float:left;
-	margin-top:30px;
-}
 
-#search-header #search{
-	background: #0b0c0c;
-
-}
-
-#search-header #search #s{
-	background: #0b0c0c;
-	font-size:12px;
-	color: #777;
-}
 
 #header_container{
 	
@@ -283,7 +269,7 @@ td, th {
 #header {
 
 	width:964px;
-	margin: 65px auto 20px;
+	margin: 23px auto 20px;
 	padding-bottom: 15px;
 	border-bottom: 5px solid #EEE;
 }
@@ -319,8 +305,8 @@ td, th {
 	width:715px;
 	min-width:200px;
 	float:right;
-	//padding: 20px 16px 20px 10px;
-	//background-color:#ccc;
+	/*padding: 20px 16px 20px 10px;*/
+	/*background-color:#ccc;*/
 	z-index: 1;
 	
 }
@@ -330,7 +316,7 @@ td, th {
 	min-width:200px;
 	margin-right:44px;
 	float:left;
-	//background-color:#666;
+	/*background-color:#666;*/
 	z-index: 1;
 }
 #content #right-col p{
@@ -346,7 +332,7 @@ td, th {
 	color: #4D4D4D;
 	padding-top:20px;
 }
-h2{	//font-weight:bold;
+h2{	/*font-weight:bold;*/
 	font-size: 27px;
 	line-height: 30px;
 	color: #000;
@@ -396,7 +382,7 @@ h2{	//font-weight:bold;
 	width:auto;
 	top:25px;
 	float:right;
-	//text-align:right
+	/*text-align:right*/
 }
 #top-language a{
 	color: white;
@@ -412,7 +398,7 @@ h2{	//font-weight:bold;
 #footer .foot_contact {
         font-size: 11px;
 	width: 964px;
-	//float: left;
+	/*float: left;*/
 	margin:0 auto;
 	padding-top: 40px;
 }
@@ -428,7 +414,7 @@ h2{	//font-weight:bold;
 	float: left;
 }
 #footer .foot_contact .links {
-	//letter-spacing:0px;
+	/*letter-spacing:0px;*/
 	width: 560px;
 	float: right;
 	text-align: right;
@@ -451,7 +437,7 @@ h2{	//font-weight:bold;
 	right:0;
 	bottom:0;
 	color:#6f6f6f;
-	//line-height: 13px;
+	/*line-height: 13px;*/
 }
 #footer-widget .widget-container {
 	width:auto;
@@ -468,7 +454,7 @@ h2{	//font-weight:bold;
 	margin-top:10px;
 	margin-right:0px;
 	border-bottom:none;
-	//background: url("http://tpecc-ny.org/wp-content/themes/images/bullet.gif") no-repeat 0px 12px;
+	/*background: url("http://tpecc-ny.org/wp-content/themes/images/bullet.gif") no-repeat 0px 12px;*/
 }
 
 /***************************hide below
@@ -586,36 +572,120 @@ h2{	//font-weight:bold;
 
 /*search*/
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
-
-#search {
-	width:120px;
-	height:28px;
-	background: #ebebeb;
-	margin-left: 10px;
-	position: relative;
+#search-header{
+	width:964px;
+	height:25px;
+	padding:15px 0 5px 0px;
+	margin:0 auto;
+	font-size:11px;
 }
 
-#search #searchsubmit {
-	background:url(images/go-btn.png) no-repeat top right;
-	width:28px;
+
+
+#search {
+	
+	right:0;
+	width:auto;
+	float:right;
 	height:28px;
+	/*background: #ebebeb;*/
+	margin-right: 35px;
+	position: relative;
+	/*border-radius: 3px;*/
+	
+}
+
+
+#search #searchsubmit {
+	/*background:url(images/go-btn.png) no-repeat top right;*/
+	/*background-color:#333;*/
+	width:28px;
+	height:22px;
 	border:0px;
 	position:absolute;
-	right: -35px;
+	right: -33px;
+	background-color:#666;
+	color:#fff;
 }
 
 #search #s {
-	width:110px;
-	height:24px;
+	width:140px;
+	height:20px;
 	border:0px;
-	margin-left:7px;
-	margin-right:10px;
-	margin-top:3px;
-	color:#666;
+	color:#999;
 	display: inline;
-	background: #ebebeb;
+	border:1px solid #333 ;
+	padding-left:5px;
+	/*background: #ebebeb;*/
 	float: left;
 }
+
+
+/* search-results for POST ARCHIVE*/
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.search .event-2004, 
+.search .event-2005, 
+.search .event-2006, 
+.search .event-2007, 
+.search .event-2008, 
+.search .event-2009, 
+.search .event-2010, 
+.search .event-2011, 
+.search .event-2012{
+	width:715px;
+	height:160px;
+	margin-bottom: 40px;
+	padding-bottom:15px;
+	border-bottom: 3px solid #e5e5e5;
+	font-family: "Times New Roman", Times, serif;
+	line-height: 1.5em;
+}
+
+.search .event-2004 .left, 
+.search .event-2005 .left, 
+.search .event-2006 .left, 
+.search .event-2007 .left, 
+.search .event-2008 .left, 
+.search .event-2009 .left, 
+.search .event-2010 .left, 
+.search .event-2011 .left, 
+.search .event-2012 .left{
+	float: left;
+	width: 225px;
+	margin-right: 20px;
+}
+.search .event-2004 .right, 
+.search .event-2005 .right, 
+.search .event-2006 .right, 
+.search .event-2007 .right, 
+.search .event-2008 .right, 
+.search .event-2009 .right, 
+.search .event-2010 .right, 
+.search .event-2011 .right, 
+.search .event-2012 .right {
+	float: left;
+	width: 450px;
+}
+.search #content #right-col .event-2004 .right p,
+.search #content #right-col .event-2005 .right p,
+.search #content #right-col .event-2006 .right p,
+.search #content #right-col .event-2007 .right p,
+.search #content #right-col .event-2008 .right p,
+.search #content #right-col .event-2009 .right p,
+.search #content #right-col .event-2010 .right p,
+.search #content #right-col .event-2011 .right p,
+.search #content #right-col .event-2012 .right p{
+	
+	width:450px;
+	margin:0;
+	padding:0;
+	font-size:13px;
+	line-height:20px;
+	max-height:75px;
+	overflow:hidden;
+}
+
 
 /*menu bar*/
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -636,9 +706,9 @@ h2{	//font-weight:bold;
 }
 
 #menu-main-menu{
-	//width: 964px;
+	/*width: 964px;*/
 	width: auto;
-	//margin:0 auto;
+	/*margin:0 auto;*/
 	position: relative;
 	padding:0;
 	float:left;
@@ -676,7 +746,7 @@ h2{	//font-weight:bold;
 #box_container{
 	margin: 0 auto;
 	width: 964px;
-	//padding-top: 35px;
+	/*padding-top: 35px;*/
 }
 #box_container .box_Latest{
 	color:#4C4C4C;
@@ -691,7 +761,7 @@ h2{	//font-weight:bold;
 	width:225px;
 	min-height: 480px;
 	float: left;
-	//padding: 10px;
+	/*padding: 10px;*/
 	margin-bottom:40px;
 	border-bottom: 1px solid #ccc;
 }
@@ -714,7 +784,7 @@ h2{	//font-weight:bold;
 }
 .title-box{
 	padding-bottom: 5px;
-	//border-bottom: 1px  solid #ebebeb;
+	/*border-bottom: 1px  solid #ebebeb;*/
 }
 .title-head{
 	font-family:'Cuprum', sans-serif, "微軟正黑體";
@@ -812,7 +882,7 @@ span#follow-box img{
 	
 	width: 964px;
 	margin: 0 auto;
-	//margin-bottom: 80px;
+	/*margin-bottom: 80px;*/
 	min-height: 410px;
 	background-color: white;
 	padding: 0;
@@ -956,7 +1026,7 @@ span#follow-box img{
 /* POST */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.news, .performing-arts, .visual-arts, .literature-film{
+.news, .performing-arts, .visual-arts, .literature, .film, .announcement, .pop-music{
 	width:715px;
 	height:160px;
 	margin-bottom: 40px;
@@ -966,20 +1036,23 @@ span#follow-box img{
 	line-height: 1.5em;
 }
 
-.news .left, .performing-arts .left, .visual-arts .left, .literature-film .left{
+.news .left, .performing-arts .left, .visual-arts .left, .literature .left, .film .left, .announcement .left, .pop-music .left{
 	float: left;
 	width: 225px;
 	margin-right: 20px;
 
 }
-.news .right, .performing-arts .right, .visual-arts .right, .literature-film .right{
+.news .right, .performing-arts .right, .visual-arts .right, .literature .right, .film .right, .announcement .right, .pop-music .right{
 	float: left;
 	width: 450px;
 }
 #content #right-col .news .right p,
 #content #right-col .performing-arts .right p,
 #content #right-col .visual-arts .right p,
-#content #right-col .literature-film .right p{
+#content #right-col .literature .right p,
+#content #right-col .film .right p,
+#content #right-col .announcement .right p
+#content #right-col .pop-music .right p{
 	width:450px;
 	margin:0;
 	padding:0;
@@ -1032,7 +1105,7 @@ span#follow-box img{
 	font-size: 18px;
 	line-height: 1em;
 	text-transform: uppercase;
-	//font-family: 'Source Sans Pro', sans-serif;
+	/*font-family: 'Source Sans Pro', sans-serif;*/
 	font-family: 'Cuprum', sans-serif;
 }
 
@@ -1057,16 +1130,16 @@ span#follow-box img{
 
 .timbg img{
 	border: 0px solid #EEE;
-	//padding: 5px;
+	/*padding: 5px;*/
 }
 
 .meta-data{
 	line-height: 16px;
-	//padding: 6px 0;
+	/*padding: 6px 0;*/
 	margin-bottom: 5px;
 	font-size: 11px;
 	float:left;
-	//border-bottom: 1px solid #ebebeb;
+	/*border-bottom: 1px solid #ebebeb;*/
 	width: 100%;
 }
 
@@ -1092,7 +1165,7 @@ span#follow-box img{
 	padding-bottom: 20px;
 }
 .event-2004 .right, .event-2005 .right, .event-2006 .right, .event-2007 .right, .event-2008 .right, .event-2009 .right, .event-2010 .right, .event-2011 .right, .event-2012 .right, {
-	//float: right;
+	/*float: right;*/
 	width: 200px;
 }
 #content #right-col .event-2004 .right p,
@@ -1151,7 +1224,7 @@ span.admin_icon {
 	text-decoration: none;
 	color: #777;
 	font-weight:bold;
-	//background: url("images/read-more.png") top left no-repeat;
+	/*background: url("images/read-more.png") top left no-repeat;*/
 }
 
 .read-more a:hover{
@@ -1183,7 +1256,7 @@ span.admin_icon {
 	color: #777;
 	margin:10px 0 0 0;
 	outline: none;
-	//-moz-outline-color:#FFF;
+	/*-moz-outline-color:#FFF;*/
 }
 
 
@@ -1218,43 +1291,43 @@ span.admin_icon {
 #sidebar {
 	float:left;
 	width:205px;
-	//padding:5px 5px 20px 15px;
-	//background: url("images/sidebar-bg.png") repeat-y top left;
+	/*padding:5px 5px 20px 15px;*/
+	/*background: url("images/sidebar-bg.png") repeat-y top left;*/
 }
 
 .sidebar_top {
 	float:left;
 	width:290px;
 	height: 41px;
-	//background: url("images/sidebar-top.png") repeat-y top left;
+	/*background: url("images/sidebar-top.png") repeat-y top left;*/
 }
 
 .sidebar_bottom {
 	float:left;
 	width:290px;
 	height: 41px;
-	//background: url("images/sidebar-bottom.png") repeat-y top left;
+	/*background: url("images/sidebar-bottom.png") repeat-y top left;*/
 }
 
 #sidebar_left {
 	float:left;
 	width:290px;
 	padding:5px 20px 20px 0px;
-	//background: url("images/sidebar-bg.png") repeat-y top right;
+	/*background: url("images/sidebar-bg.png") repeat-y top right;*/
 }
 
 .sidebar_top_left {
 	float:left;
 	width:310px;
 	height: 41px;
-	//background: url("images/sidebar-top.png") repeat-y top right;
+	/*background: url("images/sidebar-top.png") repeat-y top right;*/
 }
 
 .sidebar_bottom_left {
 	float:left;
 	width:310px;
 	height: 41px;
-	//background: url("images/sidebar-bottom.png") repeat-y top right;
+	/*background: url("images/sidebar-bottom.png") repeat-y top right;*/
 }
 
 #sidebar ul  {
@@ -2047,7 +2120,7 @@ border-right:2px solid #ebebeb;
 	border-bottom: 1px solid #D2D2D2;
 	padding:7px 0px 7px 16px;
 	margin-right:12px;
-	//background: url("http://tpecc-ny.org/wp-content/themes/images/bullet.gif") no-repeat 0px 12px;
+	/*background: url("http://tpecc-ny.org/wp-content/themes/images/bullet.gif") no-repeat 0px 12px;*/
 }
 
 .widget-container ul li ul li{
@@ -2104,8 +2177,8 @@ border-right:2px solid #ebebeb;
 img.alignleft {
 	display: inline;
 	float: left;
-	//margin-right: 22px;
-	//margin-top: 9px;
+	/*margin-right: 22px;*/
+	/*margin-top: 9px;*/
 }
 
 .alignright,
@@ -2138,7 +2211,7 @@ img.alignnone,
 	display: inline;
 	float: left;
 	margin-right: 15px;
-	//margin-top: 4px;
+	/*margin-top: 4px;*/
 	margin-bottom: 12px;
 }
 
@@ -2168,55 +2241,33 @@ img.alignnone,
 
 /*nivo-slide */
 /*////////////////////////////////////////////////////////////////////////////////////////////*/
+.nivo-directionNav{
+	text-indent: -9999px;
+	top:135px;
+	
+	position:absolute;
+	height: 32px;
+	
+	width:924px;
+	padding:0 20px;
+}
+
 
 .nivo-prevNav {
-	text-indent: -9999px;
-	left: 0;
-	position:relative;
 	display: block;
 	float: left;
 	width: 32px;
 	height: 32px;
-	margin-left: 20px;
+
 	background:url(http://tpecc-ny.org/wp-content/themes/images/arrow_previous2.png) no-repeat;
 }
 
 .nivo-nextNav {
-	text-indent: -9999px;
-	right: 0;
-	position:relative;
 	display: block;
-	float: left;
+	float: right;
 	width: 32px;
 	height: 32px;
-	margin-right: 20px;
+
 	background:url(http://tpecc-ny.org/wp-content/themes/images/arrow_next2.png) no-repeat;
 }
-
-/* Control nav styles (e.g. 1,2,3...) */
-.nivo-controlNav  {
-        position:absolute;
-        //position:relative; 
-        //right:-430px;
-        left:450px;
-        bottom:380px;
-
-}
-
-.nivo-controlNav a {
-	text-indent: -9999px;
-	position:relative;
-	display: block;
-	z-index:99;
-	cursor:pointer;
-	top: 364px;
-	left: 0;
-	margin-right: 10px;
-	float: left;
-	width: 11px;
-	height: 11px;
-	background:url(http://tpecc-ny.org/wp-content/themes/images/bullets_singleb.png) no-repeat;
-}
-.nivo-controlNav a.active {
-	background-position: -12px 0px; position: relative;
 
