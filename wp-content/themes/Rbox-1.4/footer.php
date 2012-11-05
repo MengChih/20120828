@@ -30,7 +30,7 @@
 
 
 		<div class="links">
-		Copyright ©<?php //_e( 'Copyright', 'TPECC' ); ?> <?php echo get_the_date( '2012' ); ?> <?php echo get_option('tm_footer_text') ?> | All rights reserved.<br>
+		Copyright ©<?php //_e( 'Copyright', 'TPECC' ); ?> <?php echo get_the_date( 'Y' ); ?> <?php echo get_option('tm_footer_text') ?> | All rights reserved.<br>
 
 		Mon-Fri 9:30am-5:30pm. And by appointment.
 		</div>

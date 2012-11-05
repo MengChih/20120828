@@ -78,15 +78,16 @@ include ($slideshow); ?>
 	//foreach($custom_posts as $post)  { 
 	//setup_postdata($post);
 	
-		  $num_posts = 0;
-                $show_posts = 7;
-		$args = array(
-                  'numberposts' => $show_posts 
-                );
-                $posts = get_posts($args);
-		foreach ($posts as $post) { 
-                  $num_posts++;
+		  //$num_posts = 0;
+          //$show_posts = 7;
+		  //$args = array(
+                  //'numberposts' => $show_posts 
+                //);
+          //$posts = get_posts($args);
+		  foreach ($posts as $post) { 
+                  //$num_posts++;
                   setup_postdata($post);
+
 		?>
         
 	
@@ -152,7 +153,7 @@ include ($slideshow); ?>
 	<img src="wp-content/themes/images/s_youtube.gif" width="37" height="30" alt="Youtube">
 	</td>
     <td width="183" height="35" align="left" valign="middle">
-	<a href="http://www.youtube.com/user/TaipeiCulturalCenter" target="_blank">Join us on Youtube</a>
+	<a href="#" target="_blank">Join us on Youtube</a>
 	</td>
   </tr>
   <tr>

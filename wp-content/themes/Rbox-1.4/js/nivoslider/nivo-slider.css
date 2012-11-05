@@ -101,8 +101,8 @@
 	display: block;
 	z-index:99;
 	cursor:pointer;
-	top: 320px;
-	left: 430px;
+	top: 364px;
+	left: 0;
 	margin-right: 10px;
 	float: left;
 	width: 11px;
@@ -121,7 +121,7 @@ background-position: -12px 0px; position: relative
 		/* See the "style-pack" below for image */
 		background:url(loading.gif) no-repeat 50% 50%; 
 		height: 403px;
-		width: 963px;
+		width: 715px;
 		background-color: #f2f2f2;
 		margin-bottom: 25px;
 	}

@@ -3,7 +3,7 @@
  * BP module
  * http://buddypress.org/
  *
- * @version $Id: bp_module.php 591091 2012-08-27 19:43:17Z qurl $
+ * @version $Id: bp_module.php 523481 2012-03-25 19:49:08Z qurl $
  * @copyright 2011 Jacco Drabbe
  */
 
@@ -16,7 +16,6 @@
 
 		public static function admin() {
 			$DW = &$GLOBALS['DW'];
-			$widget_id = $GLOBALS['widget_id'];
 
 			parent::admin();
 
@@ -29,8 +28,8 @@
 				// BP Groups
 				if ( $DW->bp_groups ) {
 					self::$question = 'Show widget default on BuddyPress Group pages?';
-					self::GUIHeader(self::$option['bp-group'], self::$question, NULL, NULL, $DW->getDWOpt($widget_id, 'bp-group'), 'bp-group');
-					self::GUIOption('bp-group', $DW->getDWOpt($widget_id, 'bp-group'));
+					self::GUIHeader(self::$option['bp-group'], self::$question, NULL, NULL, $DW->getDWOpt($_GET['id'], 'bp-group'));
+					self::GUIOption('bp-group', $DW->getDWOpt($_GET['id'], 'bp-group'));
 
 					echo '<table border="0" cellspacing="0" cellpadding="0">';
 					echo '<tr><td valign="top">';
@@ -105,7 +104,7 @@
 				} else {
 					$c = &$key;
 				}
-
+				
 				if ( $c == 'groups' ) {
 					$components[$c] = ucfirst($c) . ' (only main page)';
 					$DW->bp_groups = TRUE;
@@ -149,12 +148,12 @@
 			$bp = &$GLOBALS['bp'];
 
 			$group = $bp->current_item;
-
+			
 			// Check if there is an hierarchy in the groups (Plugin: BP Group Hierarchy)
 			if ( strpos($group, '/') !== FALSE ) {
 				$group = substr( strrchr($group, '/'), 1 );
 			}
-
+			
 			if ( in_array($group, $id) ) {
 				return TRUE;
 			}
